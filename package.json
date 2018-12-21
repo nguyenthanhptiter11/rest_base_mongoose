@@ -1,0 +1,26 @@
+{
+  "name": "rest_mongoose",
+  "version": "1.0.0",
+  "description": "api mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "api"
+  ],
+  "author": "thanhnv",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "mongoose": "^5.2.15",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4"
+  }
+}
