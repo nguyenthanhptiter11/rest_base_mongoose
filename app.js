@@ -9,10 +9,10 @@ var mongoose = require('mongoose')
 const productRouters = require('./api/routes/products')
 const orderRouters = require('./api/routes/orders')
 
-var uri = 'mongodb://thanhnv_js:' + process.env.MONGODB_ATLAS_PW +
+var uri = 'mongodb://' + process.env.MONGODB_ATLAS_USER + ':' + process.env.MONGODB_ATLAS_PW +
     '@node-js-mongoose-shard-00-00-554zu.mongodb.net:27017,' +
     'node-js-mongoose-shard-00-01-554zu.mongodb.net:27017,' +
-    'node-js-mongoose-shard-00-02-554zu.mongodb.net:27017/test' +
+    'node-js-mongoose-shard-00-02-554zu.mongodb.net:27017/' + process.env.MONGODB_ATLAS_DB_NAME +
     '?ssl=true&replicaSet=node-js-mongoose-shard-0&authSource=admin&retryWrites=true'
 
 
